@@ -10,7 +10,9 @@
         <p><?php echo $email.'<br>';?></p>
         <!-- valido la mail se contiene o meno il punto o la @ -->
         <?php if (strpos($email, '@') !== false && strpos($email, '.') !== false) { ?>
-                <p><?php echo "L'indirizzo email è valido, contiene il simbolo '@' e '.'"; ?></p> <br>
+                <div class="alert alert-success" role="alert">
+                    <p><?php echo "L'indirizzo email è valido, contiene il simbolo '@' e '.'"; ?></p> <br>
+                </div>
             <!-- se la mail è errata -->
         <?php } else { ?>
             <div class="alert alert-warning" role="alert">

@@ -1,7 +1,3 @@
-
-<?php
-    $email = $_POST['mail'];
-?>
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -25,6 +21,9 @@
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
         </form>
+        <?php
+            $email = $_POST['mail'];
+        ?>
             <!-- inclusione functions.php file contenente la logica -->
             <?php 
                 include __DIR__. '/functions.php';
