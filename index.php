@@ -25,15 +25,9 @@
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
         </form>
-
-        
-        <?php echo $email.'<br>';?>
-        <?php if (strpos($email, '@') !== false && strpos($email, '.') !== false) { ?>
-                <p><?php echo "L'indirizzo email è valido, contiene il simbolo '@' e '.'"; ?></p> <br>
-        <?php } else { ?>
-            <div class="alert alert-warning" role="alert">
-                indirizzo email errato, inseriscilo correttamente
-            </div>
-            <?php } ?>
+            <!-- inclusione functions.php file contenente la logica -->
+            <?php 
+                include __DIR__. '/functions.php';
+            ?>
     </body>
     </html>
